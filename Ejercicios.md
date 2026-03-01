@@ -175,8 +175,32 @@ public static String clasificarEdad(int edad) {
 
 Indica el número mínimo de tests necesarios.
 
-> La cantidad mínima de tests se establecen por las posibles vías que comparten uno o más problemas. En este caso hay cuatro caminos posibles, `4`.
+La cantidad mínima de tests se establecen por las posibles vías que comparten uno o más problemas. En este caso hay cuatro caminos posibles, `4`.
 
 ### Ejercicio 9
 
 Propón esos tests.
+
+| ID | Descripción | Entrada | Esperado |
+| :--- | :--- | :--- | :--- |
+| TC01 | Edad negativa | 1 | "ERROR" |
+| TC02 | Edad infantil | 5 | "NIÑO" |
+| TC03 | Edad adolescente | 15 | "ADOLESCENTE" |
+| TC04 | Edad adulta | 25 | "ADULTO" |
+
+## Bloque 6. Prioriza como un profesional
+
+Se quiere desarrollar una aplicación Web de compra online.
+
+### Ejercicio 10
+
+Ordena de mayor a menor prioridad:
+- Login
+- Mostrar catálogo
+- Pago con tarjeta
+- Cambiar avatar
+- Recuperar contraseña
+
+`Pago con tarjeta > Login > Recuperar contraseña > Mostrar catálogo > Cambiar avatar`
+
+Creo que el orden se basa en la gravedad que pueda tener un fallo en cada nivel de implementación. En el caso de login y recuperar contraseña, los datos personales son igualmente susceptibles pero, para evitar una inyección en la base de datos y comprometer más información uno va antes que otro.

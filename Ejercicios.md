@@ -127,6 +127,7 @@ public static int maximo(int[] datos) {
 ```
 
 ## Bloque 3. Diseña el oráculo
+
 ### Ejercicio 6.
 
 Observa el siguiente método:
@@ -137,9 +138,45 @@ public static int[] ordenar(int[] datos) {
 ```
 
 ### Ejercicio 6
+
 Define 3 propiedades que siempre debe cumplir el resultado.
 
-- Siempre devuelve un array de enteros
+- Los elementos deben estar dispuestos de menor a mayor `resultado[i] <= resultado[i+1]`
+
+- El array devuelto debe tener exactamente la misma cantidad de posiciones que el array de entrada. `resultado.length == datos.length`
+
+- El array resultante debe contener exactamente los mismos elementos.
 
 ### Ejercicio 7
+
 Explica por qué aquí es mejor usar oráculos por propiedades que valores concretos.
+
+Porque el método no siempre devuelve un valor plano igual a otro caso. Depende de una serie de condiciones, mucho más manejables con condicionales.
+
+## Bloque 4. Caminos y decisiones
+
+A la vista del siguiente método:
+
+```java
+public static String clasificarEdad(int edad) {
+    if (edad < 0) {
+        return "ERROR";
+    } else if (edad < 12) {
+        return "NIÑO";
+    } else if (edad < 18) {
+        return "ADOLESCENTE";
+    } else {
+        return "ADULTO";
+    }
+}
+```
+
+### Ejercicio 8
+
+Indica el número mínimo de tests necesarios.
+
+> La cantidad mínima de tests se establecen por las posibles vías que comparten uno o más problemas. En este caso hay cuatro caminos posibles, `4`.
+
+### Ejercicio 9
+
+Propón esos tests.

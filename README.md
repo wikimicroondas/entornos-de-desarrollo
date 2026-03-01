@@ -1,2 +1,3 @@
-# entornos-de-desarrollo
-Entregables y fragmentos de código prácticos de la asignatura Entornos de Desarrollo
+# Repositorio ED
+
+Entregables y fragmentos de código dedicados a la asignatura de Entornos de Desarrollo
